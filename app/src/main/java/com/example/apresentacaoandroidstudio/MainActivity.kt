@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         botao1.setOnClickListener(object : View.OnClickListener {
             /**Adicionando evento onClick e mostrando mensagem pro usuario(contexto exibido, mensagem, tempo).mostrar() */
             override fun onClick(p0: View?) {
-                Toast.makeText(applicationContext, "Minha primeira mensagem. uhuuu!!", Toast.LENGTH_LONG).show()
+                var textoDigitado = campo1.text.toString()
+                Toast.makeText(applicationContext, textoDigitado, Toast.LENGTH_LONG).show()
             }
 
         })
