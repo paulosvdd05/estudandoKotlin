@@ -2,6 +2,7 @@ package com.example.apresentacaoandroidstudio
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 
@@ -17,5 +18,11 @@ class MainActivity : AppCompatActivity() {
          * e linkar ele com a variavel global */
         campo1 = findViewById(R.id.nome)
         botao1 = findViewById(R.id.botao)
+        botao1.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+
+            }
+
+        })
     }
 }
